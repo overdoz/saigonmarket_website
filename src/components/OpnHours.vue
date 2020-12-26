@@ -231,9 +231,9 @@
                  viewBox="0 0 38.343 38.343">
                 <path id="Pfad_7" data-name="Pfad 7"
                       d="M19.172,0A19.172,19.172,0,1,0,38.343,19.172,19.194,19.194,0,0,0,19.172,0Zm0,35.947A16.775,16.775,0,1,1,35.947,19.172,16.794,16.794,0,0,1,19.172,35.947Z"
-                      fill="#e30615"/>
+                      fill="#000000"/>
                 <path id="Pfad_8" data-name="Pfad 8" d="M210.19,83.118h-2.4V95.6l7.54,7.54,1.694-1.694L210.19,94.6Z"
-                      transform="translate(-189.821 -75.929)" fill="#e30615"/>
+                      transform="translate(-189.821 -75.929)" fill="#000000"/>
             </svg>
             <table>
                 <tr>
@@ -247,6 +247,7 @@
             </table>
 
         </div>
+<!--
         <svg class="dots" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="501"
              height="31" viewBox="0 0 501 31">
             <defs>
@@ -617,6 +618,7 @@
                 </g>
             </g>
         </svg>
+-->
     </div>
 </template>
 
@@ -664,7 +666,8 @@
     td, tr {
         padding: 0px 15px;
         font-size: 5vw;
-        font-family: Monospaced, sans-serif;
-        color: black;
+        color: #645585;
+        font-family: 'Stylish', sans-serif;
+
     }
 </style>

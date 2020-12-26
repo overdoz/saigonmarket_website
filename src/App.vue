@@ -4,6 +4,8 @@
         <OpnHours/>
         <Food/>
         <About/>
+        <Payment/>
+        <Footer/>
     </div>
 <!--      <img alt="Vue logo" src="./assets/logo.png" />-->
 <!--      <HelloWorld msg="Hello Vue 3.0 + Vite" />-->
@@ -14,10 +16,14 @@
     import OpnHours from "./components/OpnHours.vue";
     import Food from "./components/Food.vue";
     import About from "./components/About.vue";
+    import Payment from "./sections/Payment.vue";
+    import Footer from "./sections/Footer.vue";
 
     export default {
         name: 'App',
         components: {
+            Footer,
+            Payment,
             About,
             Food,
             OpnHours,
@@ -41,6 +47,9 @@
     body {
         background-color: #98BEB6;
         padding: 0;
+    }
+    p, h1, h2, h3 {
+        font-family: 'Stylish', sans-serif;
     }
 
     #app {

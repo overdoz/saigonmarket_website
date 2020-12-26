@@ -43,7 +43,7 @@
 
     .header__blob {
         height: 120vw;
-        width: 120vw;
+        width: 160vw;
         position: absolute;
         right: -40vw;
         top: -50vw;
@@ -54,8 +54,8 @@
         height: 15vw;
         width: auto;
         position: absolute;
-        right: 1vw;
-        top: 60vw;
+        right: 0;
+        top: 65vw;
         margin: 20px;
 
     }
@@ -63,9 +63,9 @@
     .header__logo {
         position: absolute;
         z-index: 2;
-        width: 120vw;
+        width: 150vw;
         height: auto;
-        left: -30vw;
+        left: -70vw;
         top: -10vw;
     }
 

@@ -376,7 +376,7 @@
             </svg>
             <!--    <div class="upper_corner">-->
             <!--    </div>-->
-            <img class="cat" src="../assets/cat.png">
+            <img class="cat" src="../assets/cat.svg">
 
         </div>
         <div class="about__section">
@@ -472,15 +472,18 @@
     }
 
     p {
-        font-family: Monospaced, sans-serif;
-        color: #AA1A17;
+        /*color: #AA1A17;*/
+        color: #E30615;
+        text-shadow: 2px 2px #FDC831;
+        font-size: 6vw;
+        margin: 0;
     }
 
     .about__section {
-        padding: 20px;
+        padding: 10vw;
     }
     .cat {
-        height: 100px;
+        height: 35vw;
         width: auto;
         position: absolute;
         top: 0;
