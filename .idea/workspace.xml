@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Food.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OpnHours.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OpnHours.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Footer.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608925373331</updated>
       <workItem from="1608925376516" duration="46000" />
-      <workItem from="1608925473614" duration="23753000" />
+      <workItem from="1608925473614" duration="27132000" />
     </task>
     <servers />
   </component>

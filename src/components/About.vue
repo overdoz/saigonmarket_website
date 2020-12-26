@@ -483,6 +483,8 @@
                 transform: rotate(-10deg) translateY(25vw) ;
         */
         overflow: hidden;
+        width: 100vw;
+        height: auto;
 
     }
 </style>
