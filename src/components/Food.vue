@@ -74,6 +74,32 @@
                             </div>
                             <p>{{item.desc}}</p>
                         </div>
+                        <h3>Salate</h3>
+                        <div class="food__dish" v-for="item in food.Salate">
+                            <div class="food__page-row first-line">
+                                <div class="food__page-row">
+                                    <p class="food__id">{{item.id}}</p>
+                                    <p class="bold">{{item.name}}</p>
+                                </div>
+                                <p class="bold">{{item.price}} €</p>
+                            </div>
+                            <p>{{item.desc}}</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="food__page">
+                    <div class="food__sheet">
+                        <h3>Nudelgerichte</h3>
+                        <div class="food__dish" v-for="item in food.Nudelgerichte">
+                            <div class="food__page-row first-line">
+                                <div class="food__page-row">
+                                    <p class="food__id">{{item.id}}</p>
+                                    <p class="bold">{{item.name}}</p>
+                                </div>
+                                <p class="bold">{{item.price}} €</p>
+                            </div>
+                            <p>{{item.desc}}</p>
+                        </div>
                     </div>
                 </section>
             </VueScrollSnap>

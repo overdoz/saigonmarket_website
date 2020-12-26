@@ -3,3 +3,8 @@ node_modules
 dist
 dist-ssr
 *.local
+firebase.json
+.firebaserc
+firebase-debug.log
+.firebase*
+
