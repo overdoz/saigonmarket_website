@@ -380,82 +380,24 @@
 
         </div>
         <div class="about__section">
-            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="55" viewBox="0 0 71 55">
-                <g id="Gruppe_23" data-name="Gruppe 23" transform="translate(-150.059 -85)">
-                    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="35.5" cy="27.5" rx="35.5" ry="27.5"
-                             transform="translate(150.059 85)" fill="#fdc831"/>
-                    <g id="cutlery" transform="translate(162.433 91)">
-                        <g id="Gruppe_2" data-name="Gruppe 2" transform="translate(31.471)">
-                            <g id="Gruppe_1" data-name="Gruppe 1">
-                                <path id="Pfad_1" data-name="Pfad 1"
-                                      d="M385.179,0A9.234,9.234,0,0,0,376,9.267V22.38a3.941,3.941,0,0,0,2.623,3.709V40.825a3.934,3.934,0,0,0,7.868,0V1.311A1.311,1.311,0,0,0,385.179,0Zm-1.311,40.825a1.311,1.311,0,1,1-2.623,0V25a1.311,1.311,0,0,0-1.311-1.311,1.313,1.313,0,0,1-1.311-1.311V9.267a6.634,6.634,0,0,1,5.245-6.51Z"
-                                      transform="translate(-376)" fill="#e30615"/>
-                            </g>
-                        </g>
-                        <g id="Gruppe_4" data-name="Gruppe 4">
-                            <g id="Gruppe_3" data-name="Gruppe 3">
-                                <path id="Pfad_2" data-name="Pfad 2"
-                                      d="M27.8,0A1.311,1.311,0,0,0,26.49,1.311v9.267H23.868V1.311a1.311,1.311,0,0,0-2.623,0v9.267H18.623V1.311a1.311,1.311,0,0,0-2.623,0V11.889a6.568,6.568,0,0,0,5.245,6.425v2.98A3.94,3.94,0,0,0,18.623,25V40.825a3.934,3.934,0,0,0,7.868,0V25a3.94,3.94,0,0,0-2.623-3.708v-2.98a6.568,6.568,0,0,0,5.245-6.425V1.311A1.311,1.311,0,0,0,27.8,0ZM23.868,40.825a1.311,1.311,0,0,1-2.623,0V25a1.311,1.311,0,0,1,2.623,0Zm-1.311-25a3.956,3.956,0,0,1-3.709-2.64h7.418A3.956,3.956,0,0,1,22.557,15.823Z"
-                                      transform="translate(-16)" fill="#e30615"/>
-                            </g>
-                        </g>
-                        <g id="Gruppe_6" data-name="Gruppe 6" transform="translate(15.736)">
-                            <g id="Gruppe_5" data-name="Gruppe 5">
-                                <path id="Pfad_3" data-name="Pfad 3"
-                                      d="M203.868,21.294V18.269c3.286-.9,5.245-4.925,5.245-9,0-4.942-2.772-9.267-6.557-9.267S196,4.33,196,9.267c0,4.4,2.178,8.16,5.245,9v3.025A3.94,3.94,0,0,0,198.623,25V40.825a3.934,3.934,0,0,0,7.868,0V25A3.94,3.94,0,0,0,203.868,21.294ZM198.623,9.267c0-3.539,1.838-6.644,3.934-6.644s3.934,3.1,3.934,6.644-1.8,6.557-3.934,6.557S198.623,12.821,198.623,9.267Zm5.245,31.559a1.311,1.311,0,0,1-2.623,0V25a1.311,1.311,0,0,1,2.623,0Z"
-                                      transform="translate(-196)" fill="#e30615"/>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </svg>
+            <img class="about__icon" src="../assets/home.svg">
             <p>Sai Gon Market</p>
         </div>
 
         <div class="about__section">
-            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="55" viewBox="0 0 71 55">
-                <g id="Gruppe_22" data-name="Gruppe 22" transform="translate(-150.059 -221)">
-                    <ellipse id="Ellipse_5" data-name="Ellipse 5" cx="35.5" cy="27.5" rx="35.5" ry="27.5"
-                             transform="translate(150.059 221)" fill="#fdc831"/>
-                    <g id="phone" transform="translate(166.538 227.323)">
-                        <path id="Pfad_4" data-name="Pfad 4"
-                              d="M29.9,41.607a11.592,11.592,0,0,1-3.977-.711,42.408,42.408,0,0,1-15.4-9.816,42.4,42.4,0,0,1-9.816-15.4,11.508,11.508,0,0,1-.587-5.657A11.8,11.8,0,0,1,6.189,1.386,11.586,11.586,0,0,1,11.736,0a1.3,1.3,0,0,1,1.271,1.028l2.041,9.524a1.3,1.3,0,0,1-.352,1.192L11.209,15.23A34.224,34.224,0,0,0,26.377,30.4l3.487-3.487a1.3,1.3,0,0,1,1.192-.352L40.579,28.6a1.3,1.3,0,0,1,1.028,1.271,11.585,11.585,0,0,1-1.386,5.547,11.8,11.8,0,0,1-8.639,6.065,11.566,11.566,0,0,1-1.679.123ZM10.7,2.657A9.11,9.11,0,0,0,3.155,14.793,39.435,39.435,0,0,0,26.814,38.452,9.11,9.11,0,0,0,38.95,30.91L31.2,29.25l-3.642,3.642a1.3,1.3,0,0,1-1.472.257,36.815,36.815,0,0,1-17.63-17.63,1.3,1.3,0,0,1,.257-1.472L12.357,10.4Z"
-                              transform="translate(0 0)" fill="#e30615"/>
-                    </g>
-                </g>
-            </svg>
+            <img class="about__icon" src="../assets/phone.svg"/>
             <p>Tel: 089/133404</p>
             <p>E-Mail: info@saigonmarket.de</p>
         </div>
 
         <div class="about__section">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="71" height="55.111" viewBox="0 0 71 55.111">
-                <g id="Gruppe_21" data-name="Gruppe 21" transform="translate(-152.059 -375)">
-                    <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="35.5" cy="27.5" rx="35.5" ry="27.5"
-                             transform="translate(152.059 375)" fill="#fdc831"/>
-                    <g id="location" transform="translate(164.259 377.226)">
-                        <g id="Gruppe_8" data-name="Gruppe 8">
-                            <g id="Gruppe_7" data-name="Gruppe 7">
-                                <path id="Pfad_5" data-name="Pfad 5"
-                                      d="M63.069,34.941c5.628-8.831,4.92-7.729,5.082-7.959a16.916,16.916,0,0,0,3.132-9.836,17.043,17.043,0,1,0-30.864,9.962l4.992,7.834C40.074,35.762,31,38.206,31,43.588c0,1.962,1.281,4.758,7.381,6.937A48.9,48.9,0,0,0,54.24,52.884c11.158,0,23.24-3.147,23.24-9.3C77.48,38.205,68.417,35.763,63.069,34.941ZM43.007,25.4q-.026-.04-.053-.078a13.944,13.944,0,1,1,22.685-.157c-.149.2.629-1.013-11.4,17.861ZM54.24,49.786c-12.188,0-20.142-3.582-20.142-6.2,0-1.758,4.087-4.648,13.143-5.774l5.691,8.931a1.549,1.549,0,0,0,2.613,0l5.691-8.931c9.057,1.126,13.144,4.016,13.144,5.774C74.382,46.181,66.5,49.786,54.24,49.786Z"
-                                      transform="translate(-31)" fill="#e30615"/>
-                            </g>
-                        </g>
-                        <g id="Gruppe_10" data-name="Gruppe 10" transform="translate(15.493 9.399)">
-                            <g id="Gruppe_9" data-name="Gruppe 9">
-                                <path id="Pfad_6" data-name="Pfad 6"
-                                      d="M188.747,91a7.747,7.747,0,1,0,7.747,7.747A7.756,7.756,0,0,0,188.747,91Zm0,12.395a4.648,4.648,0,1,1,4.648-4.648A4.653,4.653,0,0,1,188.747,103.395Z"
-                                      transform="translate(-181 -91)" fill="#e30615"/>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </svg>
+            <img class="about__icon" src="../assets/motobike.svg">
 
             <p>Leonrodstraße 16</p>
             <p>80634 München</p>
         </div>
+        <img class="pika" src="../assets/pika.svg">
     </div>
 </template>
 
@@ -482,12 +424,22 @@
     .about__section {
         padding: 10vw;
     }
+    .about__icon {
+        height: 15vw;
+    }
     .cat {
         height: 35vw;
         width: auto;
         position: absolute;
         top: 0;
         right: 0;
+    }
+    .pika {
+        position: absolute;
+        left: 0;
+        top: 20vw;
+        height: 20vw;
+        transform: rotate(10deg);
     }
 
     .dot_section {

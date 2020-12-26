@@ -9,6 +9,7 @@
             </h3>
             <a>Impressum</a>
         </div>
+        <img class="faecher" src="../assets/faecher.svg">
     </div>
 </template>
 
@@ -36,5 +37,11 @@
         position: absolute;
         left:10px;
         bottom: 10px;
+    }
+    .faecher {
+        height: 30vw;
+        position: absolute;
+        bottom: 10vw;
+        right: -10vw;
     }
 </style>

@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56b3a9f2-735d-44b1-8c79-9b285fc7d212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sections/Footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sections/Payment.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Food.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OpnHours.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OpnHours.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Footer.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608925373331</updated>
       <workItem from="1608925376516" duration="46000" />
-      <workItem from="1608925473614" duration="22651000" />
+      <workItem from="1608925473614" duration="23753000" />
     </task>
     <servers />
   </component>
