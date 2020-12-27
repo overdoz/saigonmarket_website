@@ -1,5 +1,5 @@
 <template>
-    <div class="app">
+    <div id="app">
         <Header/>
         <OpnHours/>
         <Food/>
@@ -7,8 +7,7 @@
         <Payment/>
         <Footer/>
     </div>
-<!--      <img alt="Vue logo" src="./assets/logo.png" />-->
-<!--      <HelloWorld msg="Hello Vue 3.0 + Vite" />-->
+
 </template>
 
 <script>
@@ -48,7 +47,7 @@
         background-color: #98BEB6;
         padding: 0;
     }
-    p, h1, h2, h3 {
+    p, h1, h2, h3, a {
         font-family: 'Stylish', sans-serif;
     }
 
@@ -59,11 +58,6 @@
         padding: 0;
     }
 
-    .app {
-        height: 100%;
-        width: 100%;
-
-    }
 
     @-moz-keyframes spin360 {
         100% { -moz-transform: rotate(360deg); }
@@ -74,6 +68,7 @@
     @keyframes spin360 {
         100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
     }
+
     @keyframes fadeIn {
         0% {opacity:0; transform: translateX(20vw)}
         100% {opacity:1; transform: translateX(0)}
@@ -88,4 +83,18 @@
         0% {opacity:0;}
         100% {opacity:1;}
     }
+
+    @-moz-keyframes jump {
+        100% { -moz-transform: translateY(1vh); }
+    }
+    @-webkit-keyframes jump {
+        100% { -webkit-transform: translateY(1vh); }
+    }
+    @keyframes jump {
+        100% { -webkit-transform: translateY(1vh); transform:translateY(1vh); }
+    }
+
+    @-moz-keyframes swing { 100% { -moz-transform: rotate(10deg); } }
+    @-webkit-keyframes swing { 100% { -webkit-transform: rotate(10deg); } }
+    @keyframes swing { 100% { -webkit-transform: rotate(10deg); transform:rotate(10deg); } }
 </style>

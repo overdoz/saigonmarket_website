@@ -275,17 +275,15 @@
         position: absolute;
         bottom: 10vw;
         right: -10vw;
-        -webkit-animation:spin 4s linear infinite;
-        -moz-animation:spin 4s linear infinite;
-        animation:spin 1s linear infinite;
+        -webkit-animation:swing 4s ease-in-out infinite;
+        -moz-animation:swing 4s ease-in-out infinite;
+        animation:swing 1s ease-in-out infinite;
         animation-direction: alternate;
     }
     .dots-up {
         width: 100vw;
         height: auto;
     }
-    @-moz-keyframes spin { 100% { -moz-transform: rotate(10deg); } }
-    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(10deg); } }
-    @keyframes spin { 100% { -webkit-transform: rotate(10deg); transform:rotate(10deg); } }
+
 
 </style>

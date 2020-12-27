@@ -386,8 +386,8 @@
 
         <div class="about__section">
             <img class="about__icon" src="../assets/phone.svg"/>
-            <p>Tel: 089/133404</p>
-            <p>E-Mail: info@saigonmarket.de</p>
+            <a :href="`tel:+4989${ phone }`" >Tel: 089/{{ phone }}</a>
+            <a :href="`mailto:${ email }`">E-Mail: {{ email }}</a>
         </div>
 
         <div class="about__section">
@@ -403,7 +403,13 @@
 
 <script>
     export default {
-        name: "About"
+        name: "About",
+        data() {
+            return {
+                phone: '133404',
+                email: 'info@saigonmarket.de'
+            }
+        }
     }
 </script>
 
@@ -413,7 +419,7 @@
         text-align: center;
     }
 
-    p {
+    p, a {
         /*color: #AA1A17;*/
         color: #E30615;
         text-shadow: 2px 2px #FDC831;
@@ -423,6 +429,8 @@
 
     .about__section {
         padding: 10vw;
+        display: flex;
+        flex-direction: column;
     }
     .about__icon {
         height: 15vw;
@@ -433,24 +441,19 @@
         position: absolute;
         top: 0;
         right: 0;
-        animation:spin 1s ease-in infinite;
+        animation:swing 1s ease-in infinite;
         animation-direction: alternate;
     }
-    @-moz-keyframes spin { 100% { -moz-transform: rotate(10deg); } }
-    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(10deg); } }
-    @keyframes spin { 100% { -webkit-transform: rotate(10deg); transform:rotate(10deg); } }
+
     .pika {
         position: absolute;
         left: 0;
         top: 20vw;
         height: 20vw;
-        transform: rotate(10deg);
-        animation:jump 4s ease-in-out infinite;
+        animation:jump 1s ease-in infinite;
         animation-direction: alternate;
     }
-    @-moz-keyframes jump { 100% { -moz-transform: translateY(2vh); } }
-    @-webkit-keyframes jump { 100% { -webkit-transform: translateY(2vh); } }
-    @keyframes jump { 100% { -webkit-transform: translateY(2vh); transform:translateY(2vh); } }
+
 
     .dot_section {
         position: relative;
@@ -459,15 +462,6 @@
         background-color: #98BEB6;
     }
 
-    .upper_corner {
-        background-image: -webkit-linear-gradient(-80deg, rgba(0, 0, 0, 0.0) 50%, #D1E9E4 50%);
-        height: 20vw;
-        width: 100%;
-        margin-top: 20vw;
-        z-index: 3;
-        overflow: hidden;
-
-    }
 
     .about {
         position: relative;
