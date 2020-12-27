@@ -17,7 +17,7 @@
                 </text>
             </g>
         </svg>
-        <img class="header__logo" src="../assets/logo.svg">
+        <img class="header__logo" src="../assets/logo.png">
 
 
     </div>
@@ -62,7 +62,7 @@
     .header__logo {
         position: absolute;
         z-index: 2;
-        width: 85vw;
+        width: 90vw;
         height: auto;
         left: -30vw;
         top: -10vw;
