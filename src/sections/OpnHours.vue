@@ -1,6 +1,6 @@
 <template>
     <div class="openhours">
-        <svg class="dots-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="501" height="31" viewBox="0 0 501 31">
+        <svg class="dots" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="501" height="31" viewBox="0 0 501 31">
             <defs>
                 <clipPath id="clip-path">
                     <rect width="501" height="31" fill="none"/>
@@ -268,7 +268,6 @@
 
     .opnhours__banner {
         height: 20vw;
-
         background-color: #D1E9E4;
         display: flex;
         flex-direction: row;
@@ -278,16 +277,8 @@
         z-index: 1;
     }
 
+
     .dots {
-        transform: translateY(-5px);
-/*
-        transform: rotate(8deg) translate(-1vw, -2.5vw);
-*/
-        z-index: -7;
-
-    }
-
-    .dots-up {
         transform: translateY(8px);
         width: 100vw;
         height: auto;

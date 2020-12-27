@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="56b3a9f2-735d-44b1-8c79-9b285fc7d212" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/About.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Food.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OpnHours.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/OpnHours.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Footer.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,6 +33,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/sections" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -55,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608925373331</updated>
       <workItem from="1608925376516" duration="46000" />
-      <workItem from="1608925473614" duration="35651000" />
+      <workItem from="1608925473614" duration="36843000" />
     </task>
     <task id="LOCAL-00001" summary="add auto deployment">
       <created>1609024547976</created>

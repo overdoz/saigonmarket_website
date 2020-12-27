@@ -394,7 +394,7 @@
 
             <img class="about__icon" src="../assets/motobike.svg">
 
-            <p>Leonrodstraße 16</p>
+            <a :href="maps">Leonrodstraße 16</a>
             <p>80634 München</p>
         </div>
         <img class="pika" src="../assets/pika.svg">
@@ -407,7 +407,8 @@
         data() {
             return {
                 phone: '133404',
-                email: 'info@saigonmarket.de'
+                email: 'info@saigonmarket.de',
+                maps: 'https://www.google.com/maps/place/S%C3%A0i+G%C3%B2n+Market/@48.1534631,11.5337023,17z/data=!3m1!4b1!4m5!3m4!1s0x479e77a3e782bca7:0x914a3fe1b4d25e3d!8m2!3d48.1534631!4d11.535891'
             }
         }
     }

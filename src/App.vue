@@ -11,10 +11,10 @@
 </template>
 
 <script>
-    import Header from "./components/Header.vue";
-    import OpnHours from "./components/OpnHours.vue";
-    import Food from "./components/Food.vue";
-    import About from "./components/About.vue";
+    import Header from "./sections/Header.vue";
+    import OpnHours from "./sections/OpnHours.vue";
+    import Food from "./sections/Food.vue";
+    import About from "./sections/About.vue";
     import Payment from "./sections/Payment.vue";
     import Footer from "./sections/Footer.vue";
 

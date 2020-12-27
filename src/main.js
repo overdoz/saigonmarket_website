@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import Food from "./components/Food.vue";
+import Food from "./sections/Food.vue";
 
 import './index.css'
 
