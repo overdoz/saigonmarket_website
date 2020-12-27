@@ -47,6 +47,9 @@
         position: absolute;
         right: -40vw;
         top: -50vw;
+        -webkit-animation:spin360 60s linear infinite;
+        -moz-animation:spin360 60s linear infinite;
+        animation:spin360 60s linear infinite;
 
     }
 
@@ -57,6 +60,8 @@
         right: 0;
         top: 65vw;
         margin: 20px;
+        animation: fadeIn ease 1s;
+        -webkit-animation: fadeIn ease 1s;
 
     }
 
@@ -67,6 +72,9 @@
         height: auto;
         left: -70vw;
         top: -10vw;
+        animation: fadeIn ease 3s;
+        -webkit-animation: fadeIn ease 3s;
+
     }
 
     .header {

@@ -226,6 +226,10 @@
         width: 100vw;
         z-index: -1;
         overflow-y: visible !important;
+        -webkit-animation:spin360 90s linear infinite;
+        -moz-animation:spin360 90s linear infinite;
+        animation:spin360 90s linear infinite;
+        animation-direction: reverse;
 
     }
 

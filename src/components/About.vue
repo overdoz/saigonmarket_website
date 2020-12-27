@@ -433,14 +433,24 @@
         position: absolute;
         top: 0;
         right: 0;
+        animation:spin 1s ease-in infinite;
+        animation-direction: alternate;
     }
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(10deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(10deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(10deg); transform:rotate(10deg); } }
     .pika {
         position: absolute;
         left: 0;
         top: 20vw;
         height: 20vw;
         transform: rotate(10deg);
+        animation:jump 4s ease-in-out infinite;
+        animation-direction: alternate;
     }
+    @-moz-keyframes jump { 100% { -moz-transform: translateY(2vh); } }
+    @-webkit-keyframes jump { 100% { -webkit-transform: translateY(2vh); } }
+    @keyframes jump { 100% { -webkit-transform: translateY(2vh); transform:translateY(2vh); } }
 
     .dot_section {
         position: relative;

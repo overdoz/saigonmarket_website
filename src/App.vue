@@ -65,4 +65,27 @@
 
     }
 
+    @-moz-keyframes spin360 {
+        100% { -moz-transform: rotate(360deg); }
+    }
+    @-webkit-keyframes spin360 {
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes spin360 {
+        100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+    }
+    @keyframes fadeIn {
+        0% {opacity:0; transform: translateX(20vw)}
+        100% {opacity:1; transform: translateX(0)}
+    }
+
+    @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+    }
 </style>
