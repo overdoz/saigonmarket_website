@@ -279,9 +279,13 @@
 
 
     .dots {
-        transform: translateY(8px);
         width: 100vw;
         height: auto;
+        margin-bottom: -2vw;
+        -webkit-animation: slide 4s ease-in-out infinite;
+        -moz-animation: slide 4s ease-in-out infinite;
+        animation: slide 1s ease-in-out infinite;
+        animation-direction: alternate;
     }
 
     td, tr {

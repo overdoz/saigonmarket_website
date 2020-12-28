@@ -69,6 +69,16 @@
         100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
     }
 
+    @-moz-keyframes slide {
+        100% { -moz-transform: translateX(1vw); }
+    }
+    @-webkit-keyframes slide {
+        100% { -webkit-transform: translateX(1vw); }
+    }
+    @keyframes slide {
+        100% { -webkit-transform: translateX(1vw); transform:translateX(1vw); }
+    }
+
     @keyframes fadeIn {
         0% {opacity:0; transform: translateX(20vw)}
         100% {opacity:1; transform: translateX(0)}

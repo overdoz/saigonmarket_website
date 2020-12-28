@@ -260,7 +260,7 @@
         height: 80vw;
         width: auto;
         left: -20vw;
-        bottom: -30vw;
+        bottom: -35vw;
         -webkit-animation:spin360 150s linear infinite;
         -moz-animation:spin360 150s linear infinite;
         animation:spin360 150s linear infinite;
@@ -284,6 +284,19 @@
     .dots {
         width: 100vw;
         height: auto;
+        -webkit-animation: slide 4s ease-in-out infinite;
+        -moz-animation: slide 4s ease-in-out infinite;
+        animation: slide 1s ease-in-out infinite;
+        animation-direction: alternate;
+    }
+    @-moz-keyframes slide {
+        100% { -moz-transform: translateX(1vw); }
+    }
+    @-webkit-keyframes slide {
+        100% { -webkit-transform: translateX(1vw); }
+    }
+    @keyframes slide {
+        100% { -webkit-transform: translateX(1vw); transform: translateX(1vw); }
     }
 
 

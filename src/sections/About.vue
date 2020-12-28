@@ -483,13 +483,16 @@
         bottom: 0;
         left: 0;
         z-index: 0;
-        transform: translateY(2px);
-        /*
+        margin-bottom: -1vw;        /*
                 transform: rotate(-10deg) translateY(25vw) ;
         */
         overflow: hidden;
         width: 100vw;
         height: auto;
+        -webkit-animation: slide 4s ease-in-out infinite;
+        -moz-animation: slide 4s ease-in-out infinite;
+        animation: slide 1s ease-in-out infinite;
+        animation-direction: alternate;
 
     }
 </style>
