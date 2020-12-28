@@ -4,8 +4,8 @@
         <OpnHours/>
         <Food/>
         <About/>
-        <Payment/>
         <Footer/>
+        <Payment/>
     </div>
 
 </template>
@@ -47,8 +47,9 @@
         background-color: #98BEB6;
         padding: 0;
     }
-    p, h1, h2, h3, a {
+    p, h1, h2, h3, a, li {
         font-family: 'Stylish', sans-serif;
+        text-decoration: none;
     }
 
     #app {
@@ -56,6 +57,13 @@
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        opacity: 0;
     }
 
 

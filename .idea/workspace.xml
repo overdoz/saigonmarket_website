@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56b3a9f2-735d-44b1-8c79-9b285fc7d212" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Modal.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Food.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Footer.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,7 @@
       <updated>1608925373331</updated>
       <workItem from="1608925376516" duration="46000" />
       <workItem from="1608925473614" duration="37106000" />
-      <workItem from="1609085888071" duration="2479000" />
+      <workItem from="1609085888071" duration="8089000" />
     </task>
     <task id="LOCAL-00001" summary="add auto deployment">
       <created>1609024547976</created>
