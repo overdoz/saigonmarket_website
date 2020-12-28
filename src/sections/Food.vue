@@ -118,38 +118,38 @@
             return {
                 food: {
                     Suppen: [
-                        {id: "01", name: "Mien Ga", price: 6.0, desc: "Klare Hühnerbrühe mit Glasnudeln und Hühnerfilet"},
-                        {id: "02", name: "Wantan Suppe (G)", price: 4.5, desc: "Teigtaschen gefüllt mit Schweinefleisch und Garnelen, Hühnerbrühe, Sojasprossen"},
-                        {id: "03", name: "Udon Nudeln Suppe (F)", price: 6.0, desc: "Udon Nudeln mit Garnelen & Schweinefleisch Mix in Gemüsebrühe"},
-                        {id: "04", name: "Pho (F)", price: 8.0, desc: "Kräftig klare Rinderbrühe mit Reisnudeln, Rindfleisch, frische Kräuter, Sternanis, Kardamon, Zwiebeln"},
+                        {id: "A1", name: "Mien Ga", price: 6.0, desc: "Klare Hühnerbrühe mit Glasnudeln und Hühnerfilet"},
+                        {id: "A2", name: "Wantan Suppe (G)", price: 4.5, desc: "Teigtaschen gefüllt mit Schweinefleisch und Garnelen, Hühnerbrühe, Sojasprossen"},
+                        {id: "A3", name: "Udon Nudeln Suppe (F)", price: 6.0, desc: "Udon Nudeln mit Garnelen & Schweinefleisch Mix in Gemüsebrühe"},
+                        {id: "A4", name: "Pho (F)", price: 8.0, desc: "Kräftig klare Rinderbrühe mit Reisnudeln, Rindfleisch, frische Kräuter, Sternanis, Kardamon, Zwiebeln"},
                     ],
                     Snacks: [
-                        {id: "05", name: "Wantan (5 St.)", price: 3.5, desc: "Frittierte Teigtaschen gefüllt mit Schweinefleisch, Spinat und Zitronengras"},
-                        {id: "06", name: "Cha Gio (6 St.)", price: 2.5, desc: "Frittierte Frühlingsrollen gefüllt mit Gemüse"},
-                        {id: "07", name: "Banh Bao (M)", price: 4.0, desc: "Hefekloß aus Weizenmehl gefüllt mit Schweinefleisch, Ei, Zwiebeln und Morcheln"},
-                        {id: "08", name: "Sommerrollen (2 St.)", price: 4.0, desc: "Gewickeltes Reispapier mit Reisnudeln, Gemüse, Garnelen oder Tofu"},
+                        {id: "B1", name: "Wantan (5 St.)", price: 3.5, desc: "Frittierte Teigtaschen gefüllt mit Schweinefleisch, Spinat und Zitronengras"},
+                        {id: "B2", name: "Cha Gio (6 St.)", price: 2.5, desc: "Frittierte Frühlingsrollen gefüllt mit Gemüse"},
+                        {id: "B3", name: "Banh Bao (M)", price: 4.0, desc: "Hefekloß aus Weizenmehl gefüllt mit Schweinefleisch, Ei, Zwiebeln und Morcheln"},
+                        {id: "B4", name: "Sommerrollen (2 St.)", price: 4.0, desc: "Gewickeltes Reispapier mit Reisnudeln, Gemüse, Garnelen oder Tofu"},
                     ],
                     Reisgerichte: [
-                        {id: "09", name: "Sate (Erd)", price: 6.0, desc: "Reis mit Erdnusssoße und Gemüse"},
-                        {id: "10", name: "Bo Xao Rau", price: 7.0, desc: "Rindfleisch in gebratenem Gemüse"},
-                        {id: "11", name: "Bo La Lot (F)", price: 8.5, desc: "Rindfleisch mit Sesam, Zitronengras gewickelt in La Lot, auf lauwarmen Reisnudeln, Salat, vietnamesischen Schalotten mit Thunfischsoße"},
-                        {id: "12", name: "Bo Xao Đâu (F)", price: 8.5, desc: "Gebratenes Rindfleisch mit langen Bohnen, Pak Choi, serviert mit Thunfisch-, Austern- und Sojasoße"},
-                        {id: "13", name: "Ga Xao Sa Ớt ", price: 6.0, desc: "Zartes Hühnerfilet mit gebratenem Gemüse, Chili, Zitronengras"},
+                        {id: "C1", name: "Sate (Erd)", price: 6.0, desc: "Reis mit Erdnusssoße und Gemüse"},
+                        {id: "C2", name: "Bo Xao Rau", price: 7.0, desc: "Rindfleisch in gebratenem Gemüse"},
+                        {id: "C3", name: "Bo La Lot (F)", price: 8.5, desc: "Rindfleisch mit Sesam, Zitronengras gewickelt in La Lot, auf lauwarmen Reisnudeln, Salat, vietnamesischen Schalotten mit Thunfischsoße"},
+                        {id: "C4", name: "Bo Xao Đâu (F)", price: 8.5, desc: "Gebratenes Rindfleisch mit langen Bohnen, Pak Choi, serviert mit Thunfisch-, Austern- und Sojasoße"},
+                        {id: "C5", name: "Ga Xao Sa Ớt ", price: 6.0, desc: "Zartes Hühnerfilet mit gebratenem Gemüse, Chili, Zitronengras"},
 
                     ],
                     Reisgerichte2: [
-                        {id: "14", name: "Curry Ga", price: 6.0, desc: "Rotes Curry mit Gemüse, Kokosmilch, Zitronengras,Limette, Ingwer, Huhn oder Tofu"},
-                        {id: "15", name: "Ga Chua Ngọt ", price: 6.0, desc: "Zartes Hühnerfilet in süß saurer Ananassoße und Gemüse"},
-                        {id: "16", name: "Com Chien", price: 6.0, desc: "Gebratener Reis mit Gemüse"},
+                        {id: "C6", name: "Curry Ga", price: 6.0, desc: "Rotes Curry mit Gemüse, Kokosmilch, Zitronengras,Limette, Ingwer, Huhn oder Tofu"},
+                        {id: "C7", name: "Ga Chua Ngọt ", price: 6.0, desc: "Zartes Hühnerfilet in süß saurer Ananassoße und Gemüse"},
+                        {id: "C8", name: "Com Chien", price: 6.0, desc: "Gebratener Reis mit Gemüse"},
                     ],
                     Salate: [
-                        {id: "17", name: "Papayasalat (F)", price: 7.0, desc: "Papaya mit langen Bohnen, Cherrytomaten, Limette, Fischsoße"},
-                        {id: "18", name: "Glasnudelsalat (F)", price: 6.0, desc: "Glasnudeln mit Limette, Sojasoße, Fischsoße, Zwiebeln"},
+                        {id: "Y1", name: "Papayasalat (F)", price: 7.0, desc: "Papaya mit langen Bohnen, Cherrytomaten, Limette, Fischsoße"},
+                        {id: "Y2", name: "Glasnudelsalat (F)", price: 6.0, desc: "Glasnudeln mit Limette, Sojasoße, Fischsoße, Zwiebeln"},
                     ],
                     Nudelgerichte: [
-                        {id: "19", name: "Pad Thai (E)", price: 8.0, desc: "Reisbandnudeln, Tamarindenpaste, Garnelen, Ei, Mungobohnensprossen, Frühlingszwiebeln, Erdnüsse"},
-                        {id: "20", name: "Bun Thit Nuong", price: 9.0, desc: "Reisnudeln mit gegrilltem Rindfleisch, Salat, frische Kräuter, Gurken, Karotten, gekleidet in Fischsoße"},
-                        {id: "21", name: "Mi Xao (F)", price: 6.0, desc: "Gebratene Nudeln mit Gemüse"},
+                        {id: "Z1", name: "Pad Thai (E)", price: 8.0, desc: "Reisbandnudeln, Tamarindenpaste, Garnelen, Ei, Mungobohnensprossen, Frühlingszwiebeln, Erdnüsse"},
+                        {id: "Z2", name: "Bun Thit Nuong", price: 9.0, desc: "Reisnudeln mit gegrilltem Rindfleisch, Salat, frische Kräuter, Gurken, Karotten, gekleidet in Fischsoße"},
+                        {id: "Z3", name: "Mi Xao (F)", price: 6.0, desc: "Gebratene Nudeln mit Gemüse"},
 
                     ]
                 }
