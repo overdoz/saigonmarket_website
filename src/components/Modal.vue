@@ -23,6 +23,7 @@
                     <li v-for="alg in algs" :key="alg">{{ alg }}</li>
                 </ul>
             </div>
+            <slot></slot>
 
         </div>
     </div>

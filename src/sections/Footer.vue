@@ -237,7 +237,9 @@
         <img class="faecher" src="../assets/faecher.svg">
     </div>
     <transition name="bounce">
-        <Modal :title="'Lebensmittel1'" v-if="showModal" @close="showModal = false"/>
+        <Modal :title="'Lebensmittel1'" v-if="showModal" @close="showModal = false">
+            <p>Test</p>
+        </Modal>
     </transition>
 </template>
 
