@@ -23,7 +23,7 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
-                                    <a v-on:click="showModal = !showModal">
+                                    <a v-on:click="currentModalTitle = item.name, showModal = !showModal">
                                         <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
                                     </a>
                                 </div>
@@ -42,7 +42,7 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
-                                    <a v-on:click="showModal = !showModal">
+                                    <a v-on:click="currentModalTitle = item.name, showModal = !showModal">
                                         <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
                                     </a>
                                 </div>
@@ -60,7 +60,7 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
-                                    <a v-on:click="showModal = !showModal">
+                                    <a v-on:click="currentModalTitle = item.name, showModal = !showModal">
                                         <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
                                     </a>
                                 </div>
@@ -78,7 +78,7 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
-                                    <a v-on:click="showModal = !showModal">
+                                    <a v-on:click="currentModalTitle = item.name, showModal = !showModal">
                                         <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
                                     </a>
                                 </div>
@@ -92,7 +92,7 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
-                                    <a v-on:click="showModal = !showModal">
+                                    <a v-on:click="currentModalTitle = item.name, showModal = !showModal">
                                         <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
                                     </a>
                                 </div>
@@ -110,7 +110,7 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
-                                    <a v-on:click="showModal = !showModal">
+                                    <a v-on:click="setModalInfo(item.name)">
                                         <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
                                     </a>
                                 </div>
@@ -125,7 +125,7 @@
         </div>
     </div>
     <transition name="bounce">
-        <Modal :title="'Lebensmittel1'" v-if="showModal" @close="showModal = false"/>
+        <Modal :title="currentModalTitle" :algs="algs" v-if="showModal" @close="showModal = false"/>
     </transition>
 </template>
 
@@ -140,6 +140,15 @@
         data() {
             return {
                 showModal: false,
+                currentModalTitle: "Lebensmittel",
+                algs: ["test"],
+                methods: {
+                    setModalInfo(title) {
+                        this.currentModalTitle = title;
+                        this.algs = ["a", "b"];
+                        this.showModal = true;
+                    }
+                },
                 food: {
                     Suppen: [
                         {id: "A1", name: "Mien Ga", price: 6.0, desc: "Klare Hühnerbrühe mit Glasnudeln und Hühnerfilet", alg: []},

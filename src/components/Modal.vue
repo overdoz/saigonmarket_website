@@ -20,8 +20,7 @@
             <div class="modal__slot">
                 <p>Allergene</p>
                 <ul>
-                    <li>Erdnüsse</li>
-                    <li>Soja</li>
+                    <li v-for="alg in algs" :key="alg">{{ alg }}</li>
                 </ul>
             </div>
 
@@ -34,6 +33,7 @@
         name: "Modal",
         props: {
             title: String,
+            algs: Array,
         }
     }
 </script>
@@ -91,7 +91,7 @@
     .modal__sheet {
         position: relative;
         width: 95vw;
-        height: 95vh;
+        height: 60vh;
         background-color: #D1E9E4;
         box-shadow: 1px 1px 60vw black;
         overflow: hidden;
