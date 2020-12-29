@@ -23,6 +23,9 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
+                                    <a v-on:click="showModal = !showModal">
+                                        <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                                    </a>
                                 </div>
                                 <p class="bold">{{item.price}} €</p>
                             </div>
@@ -39,6 +42,9 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
+                                    <a v-on:click="showModal = !showModal">
+                                        <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                                    </a>
                                 </div>
                                 <p class="bold">{{item.price}} €</p>
                             </div>
@@ -54,6 +60,9 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
+                                    <a v-on:click="showModal = !showModal">
+                                        <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                                    </a>
                                 </div>
                                 <p class="bold">{{item.price}} €</p>
                             </div>
@@ -69,6 +78,9 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
+                                    <a v-on:click="showModal = !showModal">
+                                        <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                                    </a>
                                 </div>
                                 <p class="bold">{{item.price}} €</p>
                             </div>
@@ -80,6 +92,9 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
+                                    <a v-on:click="showModal = !showModal">
+                                        <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                                    </a>
                                 </div>
                                 <p class="bold">{{item.price}} €</p>
                             </div>
@@ -95,6 +110,9 @@
                                 <div class="food__page-row">
                                     <p class="food__id">{{item.id}}</p>
                                     <p class="bold">{{item.name}}</p>
+                                    <a v-on:click="showModal = !showModal">
+                                        <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                                    </a>
                                 </div>
                                 <p class="bold">{{item.price}} €</p>
                             </div>
@@ -106,50 +124,56 @@
 
         </div>
     </div>
+    <transition name="bounce">
+        <Modal :title="'Lebensmittel1'" v-if="showModal" @close="showModal = false"/>
+    </transition>
 </template>
 
 <script>
     import VueScrollSnap from "vue-scroll-snap";
+    import Modal from "../components/Modal.vue";
+
 
     export default {
         name: "Food",
-        components: {VueScrollSnap},
+        components: {VueScrollSnap, Modal},
         data() {
             return {
+                showModal: false,
                 food: {
                     Suppen: [
-                        {id: "A1", name: "Mien Ga", price: 6.0, desc: "Klare Hühnerbrühe mit Glasnudeln und Hühnerfilet"},
-                        {id: "A2", name: "Wantan Suppe (G)", price: 4.5, desc: "Teigtaschen gefüllt mit Schweinefleisch und Garnelen, Hühnerbrühe, Sojasprossen"},
-                        {id: "A3", name: "Udon Nudeln Suppe (F)", price: 6.0, desc: "Udon Nudeln mit Garnelen & Schweinefleisch Mix in Gemüsebrühe"},
-                        {id: "A4", name: "Pho (F)", price: 8.0, desc: "Kräftig klare Rinderbrühe mit Reisnudeln, Rindfleisch, frische Kräuter, Sternanis, Kardamon, Zwiebeln"},
+                        {id: "A1", name: "Mien Ga", price: 6.0, desc: "Klare Hühnerbrühe mit Glasnudeln und Hühnerfilet", alg: []},
+                        {id: "A2", name: "Wantan Suppe", price: 4.5, desc: "Teigtaschen gefüllt mit Schweinefleisch und Garnelen, Hühnerbrühe, Sojasprossen", alg: ["Garnelen"]},
+                        {id: "A3", name: "Udon Nudeln Suppe", price: 6.0, desc: "Udon Nudeln mit Garnelen & Schweinefleisch Mix in Gemüsebrühe", alg: ["Fischerzeugnis"]},
+                        {id: "A4", name: "Pho", price: 8.0, desc: "Kräftig klare Rinderbrühe mit Reisnudeln, Rindfleisch, frische Kräuter, Sternanis, Kardamon, Zwiebeln", alg: ["Fischerzeugnis"]},
                     ],
                     Snacks: [
-                        {id: "B1", name: "Wantan (5 St.)", price: 3.5, desc: "Frittierte Teigtaschen gefüllt mit Schweinefleisch, Spinat und Zitronengras"},
-                        {id: "B2", name: "Cha Gio (6 St.)", price: 2.5, desc: "Frittierte Frühlingsrollen gefüllt mit Gemüse"},
-                        {id: "B3", name: "Banh Bao (M)", price: 4.0, desc: "Hefekloß aus Weizenmehl gefüllt mit Schweinefleisch, Ei, Zwiebeln und Morcheln"},
-                        {id: "B4", name: "Sommerrollen (2 St.)", price: 4.0, desc: "Gewickeltes Reispapier mit Reisnudeln, Gemüse, Garnelen oder Tofu"},
+                        {id: "B1", name: "Wantan (5 St.)", price: 3.5, desc: "Frittierte Teigtaschen gefüllt mit Schweinefleisch, Spinat und Zitronengras", alg: []},
+                        {id: "B2", name: "Cha Gio (6 St.)", price: 2.5, desc: "Frittierte Frühlingsrollen gefüllt mit Gemüse", alg: []},
+                        {id: "B3", name: "Banh Bao", price: 4.0, desc: "Hefekloß aus Weizenmehl gefüllt mit Schweinefleisch, Ei, Zwiebeln und Morcheln", alg: ["Weizenmehl"]},
+                        {id: "B4", name: "Sommerrollen (2 St.)", price: 4.0, desc: "Gewickeltes Reispapier mit Reisnudeln, Gemüse, Garnelen oder Tofu", alg: ["Garnelen"]},
                     ],
                     Reisgerichte: [
-                        {id: "C1", name: "Sate (Erd)", price: 6.0, desc: "Reis mit Erdnusssoße und Gemüse"},
-                        {id: "C2", name: "Bo Xao Rau", price: 7.0, desc: "Rindfleisch in gebratenem Gemüse"},
-                        {id: "C3", name: "Bo La Lot (F)", price: 8.5, desc: "Rindfleisch mit Sesam, Zitronengras gewickelt in La Lot, auf lauwarmen Reisnudeln, Salat, vietnamesischen Schalotten mit Thunfischsoße"},
-                        {id: "C4", name: "Bo Xao Đâu (F)", price: 8.5, desc: "Gebratenes Rindfleisch mit langen Bohnen, Pak Choi, serviert mit Thunfisch-, Austern- und Sojasoße"},
-                        {id: "C5", name: "Ga Xao Sa Ớt ", price: 6.0, desc: "Zartes Hühnerfilet mit gebratenem Gemüse, Chili, Zitronengras"},
+                        {id: "C1", name: "Sate", price: 6.0, desc: "Reis mit Erdnusssoße und Gemüse", alg: ["Erdnüsse"]},
+                        {id: "C2", name: "Bo Xao Rau", price: 7.0, desc: "Rindfleisch in gebratenem Gemüse", alg: []},
+                        {id: "C3", name: "Bo La Lot", price: 8.5, desc: "Rindfleisch mit Sesam, Zitronengras gewickelt in La Lot, auf lauwarmen Reisnudeln, Salat, vietnamesischen Schalotten mit Thunfischsoße", alg: ["Fischerzeugnis"]},
+                        {id: "C4", name: "Bo Xao Đâu", price: 8.5, desc: "Gebratenes Rindfleisch mit langen Bohnen, Pak Choi, serviert mit Thunfisch-, Austern- und Sojasoße", alg: ["Fischerzeugnis"]},
+                        {id: "C5", name: "Ga Xao Sa Ớt ", price: 6.0, desc: "Zartes Hühnerfilet mit gebratenem Gemüse, Chili, Zitronengras", alg: []},
 
                     ],
                     Reisgerichte2: [
-                        {id: "C6", name: "Curry Ga", price: 6.0, desc: "Rotes Curry mit Gemüse, Kokosmilch, Zitronengras,Limette, Ingwer, Huhn oder Tofu"},
-                        {id: "C7", name: "Ga Chua Ngọt ", price: 6.0, desc: "Zartes Hühnerfilet in süß saurer Ananassoße und Gemüse"},
-                        {id: "C8", name: "Com Chien", price: 6.0, desc: "Gebratener Reis mit Gemüse"},
+                        {id: "C6", name: "Curry Ga", price: 6.0, desc: "Rotes Curry mit Gemüse, Kokosmilch, Zitronengras,Limette, Ingwer, Huhn oder Tofu", alg: []},
+                        {id: "C7", name: "Ga Chua Ngọt ", price: 6.0, desc: "Zartes Hühnerfilet in süß saurer Ananassoße und Gemüse", alg: []},
+                        {id: "C8", name: "Com Chien", price: 6.0, desc: "Gebratener Reis mit Gemüse", alg: []},
                     ],
                     Salate: [
-                        {id: "Y1", name: "Papayasalat (F)", price: 7.0, desc: "Papaya mit langen Bohnen, Cherrytomaten, Limette, Fischsoße"},
-                        {id: "Y2", name: "Glasnudelsalat (F)", price: 6.0, desc: "Glasnudeln mit Limette, Sojasoße, Fischsoße, Zwiebeln"},
+                        {id: "Y1", name: "Papayasalat", price: 7.0, desc: "Papaya mit langen Bohnen, Cherrytomaten, Limette, Fischsoße", alg: ["Fischerzeugnis"]},
+                        {id: "Y2", name: "Glasnudelsalat", price: 6.0, desc: "Glasnudeln mit Limette, Sojasoße, Fischsoße, Zwiebeln", alg: ["Fischerzeugnis"]},
                     ],
                     Nudelgerichte: [
-                        {id: "Z1", name: "Pad Thai (E)", price: 8.0, desc: "Reisbandnudeln, Tamarindenpaste, Garnelen, Ei, Mungobohnensprossen, Frühlingszwiebeln, Erdnüsse"},
-                        {id: "Z2", name: "Bun Thit Nuong", price: 9.0, desc: "Reisnudeln mit gegrilltem Rindfleisch, Salat, frische Kräuter, Gurken, Karotten, gekleidet in Fischsoße"},
-                        {id: "Z3", name: "Mi Xao (F)", price: 6.0, desc: "Gebratene Nudeln mit Gemüse"},
+                        {id: "Z1", name: "Pad Thai", price: 8.0, desc: "Reisbandnudeln, Tamarindenpaste, Garnelen, Ei, Mungobohnensprossen, Frühlingszwiebeln, Erdnüsse", alg: ["Eierzeugnis"]},
+                        {id: "Z2", name: "Bun Thit Nuong", price: 9.0, desc: "Reisnudeln mit gegrilltem Rindfleisch, Salat, frische Kräuter, Gurken, Karotten, gekleidet in Fischsoße", alg: []},
+                        {id: "Z3", name: "Mi Xao", price: 6.0, desc: "Gebratene Nudeln mit Gemüse", alg: ["Fischerzeugnis"]},
 
                     ]
                 }
@@ -183,6 +207,12 @@
         transform: rotate(30deg);
         margin-right: 5vw;
         margin-left: 15vw;
+    }
+
+    .food__icon {
+        height: 3vw;
+        width: 3vw;
+        margin-left: 2vw;
     }
 
     .food__page-row {

@@ -237,7 +237,7 @@
         <img class="faecher" src="../assets/faecher.svg">
     </div>
     <transition name="bounce">
-        <Modal v-if="showModal" @close="showModal = false"/>
+        <Modal :title="'Lebensmittel1'" v-if="showModal" @close="showModal = false"/>
     </transition>
 </template>
 
@@ -322,22 +322,6 @@
         100% { -webkit-transform: translateX(1vw); transform: translateX(1vw); }
     }
 
-    .bounce-enter-active {
-        animation: bounce-in 1.5s;
-    }
-    .bounce-leave-active {
-        animation: bounce-in 1.5s reverse;
-    }
-    @keyframes bounce-in {
-        0% {
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.25);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
+
 
 </style>

@@ -15,7 +15,7 @@
 
 
             <div class="modal__titlerow modal__slot">
-                <h2>Bezeichnung</h2>
+                <h2>{{ title }}</h2>
             </div>
             <div class="modal__slot">
                 <p>Allergene</p>
@@ -31,7 +31,10 @@
 
 <script>
     export default {
-        name: "Modal"
+        name: "Modal",
+        props: {
+            title: String,
+        }
     }
 </script>
 
