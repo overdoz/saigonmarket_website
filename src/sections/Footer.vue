@@ -231,16 +231,28 @@
         </svg>
 
         <div class="footer__links">
-            <a>Impressum</a>
+            <a v-on:click="showModal = !showModal">Impressum</a>
         </div>
 
         <img class="faecher" src="../assets/faecher.svg">
     </div>
+    <transition name="bounce">
+        <Modal :title="'Lebensmittel1'" v-if="showModal" @close="showModal = false">
+            <p>Test</p>
+        </Modal>
+    </transition>
 </template>
 
 <script>
+    import Modal from "../components/Modal.vue";
     export default {
-        name: "Footer"
+        name: "Footer",
+        components: {Modal},
+        data() {
+            return {
+                showModal: false,
+            }
+        }
     }
 </script>
 
@@ -248,6 +260,19 @@
     a {
         font-family: 'Stylish', sans-serif;
         font-size: 5vw;
+    }
+    /* Enter and leave animations can use different */
+    /* durations and timing functions.              */
+    .slide-fade-enter-active {
+        transition: all .8s ease;
+    }
+    .slide-fade-leave-active {
+        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    }
+    .slide-fade-enter, .slide-fade-leave-to
+        /* .slide-fade-leave-active below version 2.1.8 */ {
+        transform: translateY(40vh);
+        opacity: 0;
     }
     .footer {
         position: relative;
@@ -298,6 +323,7 @@
     @keyframes slide {
         100% { -webkit-transform: translateX(1vw); transform: translateX(1vw); }
     }
+
 
 
 </style>
