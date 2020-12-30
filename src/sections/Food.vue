@@ -67,6 +67,11 @@
                 <p class="bold">{{ item.price }} €</p>
               </div>
               <p>{{ item.desc }}</p>
+              <div v-if="'extra' in item" class="second-line">
+                <div class="extra-topping" v-for="extra in item.extra">
+                  <p>+ {{extra.name}}</p> <p>+ {{extra.price}} €</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -85,6 +90,11 @@
                 <p class="bold">{{ item.price }} €</p>
               </div>
               <p>{{ item.desc }}</p>
+              <div v-if="'extra' in item" class="second-line">
+                <div class="extra-topping" v-for="extra in item.extra">
+                  <p>+ {{extra.name}}</p> <p>+ {{extra.price}} €</p>
+                </div>
+              </div>
             </div>
             <h3>Salate</h3>
             <div class="food__dish" v-for="item in food.Salate">
@@ -117,6 +127,11 @@
                 <p class="bold">{{ item.price }} €</p>
               </div>
               <p>{{ item.desc }}</p>
+              <div v-if="'extra' in item" class="second-line">
+                <div class="extra-topping" v-for="extra in item.extra">
+                  <p>+ {{extra.name}}</p> <p>+ {{extra.price}} €</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -208,8 +223,22 @@ export default {
           },
         ],
         Reisgerichte: [
-          {id: "C1", name: "Sate", price: 6.0, desc: "Reis mit Erdnusssoße und Gemüse", alg: ["Erdnüsse"]},
-          {id: "C2", name: "Bo Xao Rau", price: 7.0, desc: "Rindfleisch in gebratenem Gemüse", alg: []},
+          {
+            id: "C1",
+            name: "Sate",
+            price: 6.0,
+            desc: "Reis mit Erdnusssoße und Gemüse",
+            alg: ["Erdnüsse"],
+            extra: [
+                {
+                  name: "Rindfleisch / Garnelen / Huhn",
+                  price: 1.0
+                }
+            ]
+          },
+          {
+            id: "C2", name: "Bo Xao Rau", price: 7.0, desc: "Rindfleisch in gebratenem Gemüse", alg: []
+          },
           {
             id: "C3",
             name: "Bo La Lot",
@@ -239,7 +268,17 @@ export default {
             name: "Curry Ga",
             price: 6.0,
             desc: "Rotes Curry mit Gemüse, Kokosmilch, Zitronengras,Limette, Ingwer, Huhn oder Tofu",
-            alg: []
+            alg: [],
+            extra: [
+              {
+                name: "Ente",
+                price: 1.0
+              },
+              {
+                name: "Huhn / Tofu",
+                price: 0
+              }
+            ]
           },
           {
             id: "C7",
@@ -281,7 +320,27 @@ export default {
             desc: "Reisnudeln mit gegrilltem Rindfleisch, Salat, frische Kräuter, Gurken, Karotten, gekleidet in Fischsoße",
             alg: []
           },
-          {id: "Z3", name: "Mi Xao", price: 6.0, desc: "Gebratene Nudeln mit Gemüse", alg: ["Fischerzeugnis"]},
+          {
+            id: "Z3",
+            name: "Mi Xao",
+            price: 6.0,
+            desc: "Gebratene Nudeln mit Gemüse",
+            alg: ["Fischerzeugnis"],
+            extra: [
+              {
+                name: "Rindfleisch / Ente / Garnelen",
+                price: 1.0
+              },
+              {
+                name: "Huhn / Tofu",
+                price: 0
+              },
+              {
+                name: "Udon Nudeln",
+                price: 0.5
+              }
+            ]
+          },
 
         ]
       },
@@ -325,7 +384,11 @@ p {
   margin-right: 5vw;
   margin-left: 15vw;
 }
-
+.extra-topping {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .food__icon {
   height: 3.5vw;
   width: 3.5vw;
@@ -407,7 +470,7 @@ p {
   background-color: white;
   box-shadow: 2px 2px 5px black;
   width: 80vw;
-  min-height: 70vh;
+  min-height: 55vh;
   padding: 4vw;
   display: flex;
   flex-direction: column;
@@ -420,5 +483,26 @@ p {
 }
 .modal__content > * {
   z-index: 100;
+}
+
+@media (max-width: 600px) {
+  .food__sheet {
+    height: 75vh;
+  }
+  .food__page {
+    height: 80vh;
+
+
+  }
+}
+@media (min-width: 800px) {
+  .food__sheet {
+    height: 110vw;
+  }
+  .food__page {
+    height: 125vw;
+
+
+  }
 }
 </style>
