@@ -47,7 +47,7 @@
         background-color: #98BEB6;
         padding: 0;
     }
-    p, h1, h2, h3, a, li {
+    p, h1, h2, h3, h4, a, li {
         font-family: 'Stylish', sans-serif;
         text-decoration: none;
     }

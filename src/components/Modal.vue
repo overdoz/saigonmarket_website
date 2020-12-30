@@ -18,10 +18,7 @@
                 <h2>{{ title }}</h2>
             </div>
             <div class="modal__slot">
-                <p>Allergene</p>
-                <ul>
-                    <li v-for="alg in algs" :key="alg">{{ alg }}</li>
-                </ul>
+
             </div>
             <slot></slot>
 
@@ -102,9 +99,9 @@
 
     .close {
         position: absolute;
-        width: 4vw;
+        width: 5vw;
         height: auto;
-        right: 3vw;
-        top: 3vw;
+        right: 5vw;
+        top: 5vw;
     }
 </style>
