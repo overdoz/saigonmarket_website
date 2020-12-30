@@ -5,7 +5,6 @@
         <Food/>
         <About/>
         <Footer/>
-        <Payment/>
     </div>
 
 </template>

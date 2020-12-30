@@ -83,8 +83,8 @@
                 <div class="food__page-row">
                   <p class="food__id">{{ item.id }}</p>
                   <p class="bold">{{ item.name }}</p>
-                  <a v-on:click="currentModalTitle = item.name, showModal = !showModal">
-                    <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                  <a v-if="item.alg.length > 0" v-on:click="currentModalTitle = item.name; algs.alergene = item.alg;  showModal = !showModal">
+                    <img class="food__icon" src="../assets/info.svg"/>
                   </a>
                 </div>
                 <p class="bold">{{ item.price }} €</p>
@@ -102,8 +102,8 @@
                 <div class="food__page-row">
                   <p class="food__id">{{ item.id }}</p>
                   <p class="bold">{{ item.name }}</p>
-                  <a v-on:click="currentModalTitle = item.name, showModal = !showModal">
-                    <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                  <a v-if="item.alg.length > 0" v-on:click="currentModalTitle = item.name; algs.alergene = item.alg;  showModal = !showModal">
+                    <img class="food__icon" src="../assets/info.svg"/>
                   </a>
                 </div>
                 <p class="bold">{{ item.price }} €</p>
@@ -120,8 +120,8 @@
                 <div class="food__page-row">
                   <p class="food__id">{{ item.id }}</p>
                   <p class="bold">{{ item.name }}</p>
-                  <a v-on:click="currentModalTitle = item.name, showModal = !showModal">
-                    <img v-if="item.alg.length > 0" class="food__icon" src="../assets/info.svg"/>
+                  <a v-if="item.alg.length > 0" v-on:click="currentModalTitle = item.name; algs.alergene = item.alg;  showModal = !showModal">
+                    <img class="food__icon" src="../assets/info.svg"/>
                   </a>
                 </div>
                 <p class="bold">{{ item.price }} €</p>
@@ -144,7 +144,7 @@
       <div class="modal__content">
         <h4>Allergene</h4>
         <ul>
-          <li v-for="alg in algs.alergene" :key="alg">{{ alg }}</li>
+          <li v-for="alg in algs.alergene" :key="alg">Enthält {{ alg }}</li>
         </ul>
       </div>
 
@@ -212,7 +212,7 @@ export default {
             name: "Banh Bao",
             price: 4.0,
             desc: "Hefekloß aus Weizenmehl gefüllt mit Schweinefleisch, Ei, Zwiebeln und Morcheln",
-            alg: ["Weizenmehl"]
+            alg: ["Weizenmehl", "Ei"]
           },
           {
             id: "B4",
@@ -244,7 +244,7 @@ export default {
             name: "Bo La Lot",
             price: 8.5,
             desc: "Rindfleisch mit Sesam, Zitronengras gewickelt in La Lot, auf lauwarmen Reisnudeln, Salat, vietnamesischen Schalotten mit Thunfischsoße",
-            alg: ["Fischerzeugnis"]
+            alg: ["Fischerzeugnis", "Sesam"]
           },
           {
             id: "C4",
@@ -267,16 +267,16 @@ export default {
             id: "C6",
             name: "Curry Ga",
             price: 6.0,
-            desc: "Rotes Curry mit Gemüse, Kokosmilch, Zitronengras,Limette, Ingwer, Huhn oder Tofu",
+            desc: "Rotes Curry mit Gemüse, Kokosmilch, Zitronengras, Limette, Ingwer",
             alg: [],
             extra: [
               {
-                name: "Ente",
-                price: 1.0
-              },
-              {
                 name: "Huhn / Tofu",
                 price: 0
+              },
+              {
+                name: "Ente",
+                price: 1.0
               }
             ]
           },
@@ -295,7 +295,7 @@ export default {
             name: "Papayasalat",
             price: 7.0,
             desc: "Papaya mit langen Bohnen, Cherrytomaten, Limette, Fischsoße",
-            alg: ["Fischerzeugnis"]
+            alg: ["Fischerzeugnis", "Erdnüsse"]
           },
           {
             id: "Y2",
@@ -318,7 +318,7 @@ export default {
             name: "Bun Thit Nuong",
             price: 9.0,
             desc: "Reisnudeln mit gegrilltem Rindfleisch, Salat, frische Kräuter, Gurken, Karotten, gekleidet in Fischsoße",
-            alg: []
+            alg: ["Fischerzeugnis", "Erdnüsse"]
           },
           {
             id: "Z3",
@@ -328,12 +328,12 @@ export default {
             alg: ["Fischerzeugnis"],
             extra: [
               {
-                name: "Rindfleisch / Ente / Garnelen",
-                price: 1.0
-              },
-              {
                 name: "Huhn / Tofu",
                 price: 0
+              },
+              {
+                name: "Rindfleisch / Ente / Garnelen",
+                price: 1.0
               },
               {
                 name: "Udon Nudeln",

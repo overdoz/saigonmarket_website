@@ -259,7 +259,7 @@
 <style scoped>
 
     .openhours {
-        height: 35vw;
+        height: 30vw;
         width: 100vw;
         z-index: 1;
         margin-top: 20px;

@@ -20,7 +20,12 @@
             <div class="modal__slot">
 
             </div>
-            <slot></slot>
+          <div class="modal__content">
+            <slot>
+
+            </slot>
+          </div>
+
 
         </div>
     </div>
@@ -31,13 +36,12 @@
         name: "Modal",
         props: {
             title: String,
-            algs: Array,
         }
     }
 </script>
 
 <style scoped>
-    h2 {
+    h2, p {
         margin: 0;
         z-index: 100;
     }
@@ -48,6 +52,7 @@
         -webkit-animation: spin360 60s linear infinite;
         -moz-animation: spin360 60s linear infinite;
         animation: spin360 60s linear infinite;
+
     }
 
     .top {
@@ -67,8 +72,7 @@
         width: 100vw;
         height: 100vh;
         position: fixed;
-        z-index: 99;
-
+        z-index: 50;
         left: 0;
         top: 0;
 
@@ -92,9 +96,14 @@
         height: 60vh;
         background-color: #D1E9E4;
         box-shadow: 1px 1px 60vw black;
-        overflow: hidden;
+        overflow-y: scroll;
+      overflow-x: hidden;
 
-
+    }
+    .modal__content {
+      position: relative;
+      overflow: scroll;
+      z-index: 100;
     }
 
     .close {

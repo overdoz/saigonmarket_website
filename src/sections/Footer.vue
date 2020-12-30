@@ -237,8 +237,33 @@
         <img class="faecher" src="../assets/faecher.svg">
     </div>
     <transition name="bounce">
-        <Modal :title="'Lebensmittel1'" v-if="showModal" @close="showModal = false">
-            <p>Test</p>
+        <Modal :title="'Impressum'" v-if="showModal" @close="showModal = false">
+          <div class="modal__content">
+
+
+            <h3>Datenschutz</h3>
+          <p>Sie werden eventuell um die Angabe persönlicher Informationen gebeten. Die Beantwortung dieser Fragen ist freiwillig. Die auf der Website erhobenen persönlichen Daten werden ausschließlich zu Ihrer individuellen Betreuung, der Übersendung von Bestellungen oder der Unterbreitung von Angeboten gespeichert und verarbeitet. Herr Le versichert, dass Ihre Angaben entsprechend den geltenden datenschutzrechtlichen Bestimmungen vertraulich behandelt werden.</p>
+          <h3>Haftungsausschluss</h3>
+          <p>Diese Website wurde mit größtmöglicher Sorgfalt zusammengestellt. Trotzdem kann die Fehlerfreiheit und Genauigkeit der enthaltenen Informationen nicht garantiert werden. Jegliche Haftung für Schäden, die direkt oder indirekt aus der Benutzung dieser Website entstehen aus, soweit diese nicht auf Vorsatz oder grober Fahrlässigkeit beruhen sind ausgeschlossen.</p>
+          <h3>Externe Verweise und Links</h3>
+          <p>Trotz sorgfältiger inhaltlicher Kontrolle wird keine Haftung für die Inhalte externer Links übernommen. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+          <h3>Copyright</h3>
+          <p>Inhalt und Gestaltung der Internet-Seiten sind urheberrechtlich geschützt. Eine Vervielfältigung der Seiten oder ihrer Inhalte bedarf der vorherigen schriftlichen Zustimmung durch Herrn Le.</p>
+
+          <div class="impress">
+          <h4>Gemäß §5 Telemediengesetz (TMG):</h4>
+          <p>Anbieter dieser Internet-Seite</p>
+          <p>und verwantwortlich für den Inhalt</p>
+
+            <p>Sai Gon Market</p>
+            <p>Herr Ngoc-Thanh Le</p>
+            <p>Leonrodstraße 16</p>
+            <p>D-80634 München</p>
+            <p>Steuer-Nr.: 145 | 166 | 42697</p>
+            <p>Tel.: +49 (89) 133 404</p>
+          </div>
+          </div>
+
         </Modal>
     </transition>
 </template>
@@ -257,22 +282,13 @@
 </script>
 
 <style scoped>
+p {
+  z-index: 100;
+  margin: 0;
+}
     a {
         font-family: 'Stylish', sans-serif;
         font-size: 5vw;
-    }
-    /* Enter and leave animations can use different */
-    /* durations and timing functions.              */
-    .slide-fade-enter-active {
-        transition: all .8s ease;
-    }
-    .slide-fade-leave-active {
-        transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-    }
-    .slide-fade-enter, .slide-fade-leave-to
-        /* .slide-fade-leave-active below version 2.1.8 */ {
-        transform: translateY(40vh);
-        opacity: 0;
     }
     .footer {
         position: relative;
@@ -313,15 +329,20 @@
         -moz-animation: slide 4s ease-in-out infinite;
         animation: slide 1s ease-in-out infinite;
         animation-direction: alternate;
+      position: relative;
+      z-index: 1;
     }
-    @-moz-keyframes slide {
-        100% { -moz-transform: translateX(1vw); }
+    .modal__content {
+      padding: 2vw;
+      overflow: scroll;
+      z-index: 99;
     }
-    @-webkit-keyframes slide {
-        100% { -webkit-transform: translateX(1vw); }
-    }
-    @keyframes slide {
-        100% { -webkit-transform: translateX(1vw); transform: translateX(1vw); }
+    .impress {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
 

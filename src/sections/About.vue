@@ -665,7 +665,7 @@
         width: auto;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 3vw;
         /*animation:swing 1s ease-in infinite;*/
         /*animation-direction: alternate;*/
     }
@@ -673,9 +673,10 @@
     .pika {
         position: absolute;
         left: -4vw;
-        bottom: 0;
+        bottom: -1vw;
         height: 20vw;
       transform: rotate(10deg);
+      z-index: 5;
         /*animation:jump 1s ease-in infinite;*/
         /*animation-direction: alternate;*/
     }
@@ -686,7 +687,7 @@
         width: 100%;
         height: 20vw;
         background-color: #98BEB6;
-      z-index: 5;
+      z-index: 1;
     }
 
 
