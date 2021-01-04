@@ -699,7 +699,7 @@
         align-items: center;
         flex-direction: column;
         background-color: #D1E9E4;
-        z-index: -1;
+        z-index: 10;
 
 
     }

@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div class="app">
         <Header/>
         <OpnHours/>
         <Food/>
@@ -46,12 +46,16 @@
         background-color: #98BEB6;
         padding: 0;
     }
+    a {
+      position: relative;
+      z-index: 10;
+    }
     p, h1, h2, h3, h4, a, li {
         font-family: 'Stylish', sans-serif;
         text-decoration: none;
     }
 
-    #app {
+    .app {
         height: 100%;
         width: 100%;
         margin: 0;
